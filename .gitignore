@@ -1,0 +1,6 @@
+node_modules
+.idea
+package-lock.json
+.parcel-cache
+dist
+pnpm-lock.yaml
