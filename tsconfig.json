@@ -1,12 +1,19 @@
 {
-  "compilerOptions": {
-    "module": "CommonJS",
-    "target": "esnext",
-    "sourceMap": true,
-    "lib": [
-      "esnext",
-      "dom"
-    ]
-  },
-  "include":["./src/"]
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "module": "esnext",
+        "allowJs": true,
+        "strict": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "noImplicitAny": true,
+        "alwaysStrict": true,
+        "target": "esnext",
+        "sourceMap": true,
+        "lib": ["esnext", "dom"],
+        "types": ["node", "webpack-env"],
+        "allowSyntheticDefaultImports": true,
+        "declaration": true
+    },
+    "include": ["./src/**/*.ts", "./types/**/*.d.ts"]
 }
